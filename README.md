@@ -19,3 +19,5 @@ python cliente.py
 ```
 
 ### Resultado: 
+
+![c](https://user-images.githubusercontent.com/73178068/187048755-755a5830-0969-4efc-b951-6151e3bd83d1.PNG)
