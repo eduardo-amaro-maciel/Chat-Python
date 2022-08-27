@@ -19,7 +19,6 @@ terminado = False
 while not terminado: 
 
     msg = cliente.recv(1024).decode('utf-8')
-    cliente.send(input('Servidor: ').encode('utf-8'))
 
     if msg == 'sair':
         print(Fore.RED + 'Cliente saiu da conversa')
@@ -27,6 +26,8 @@ while not terminado:
     
     else: 
         print(Fore.CYAN + 'User: ' + msg)
+    
+    cliente.send(input('Servidor: ').encode('utf-8'))
 
 cliente.close()
 servidor.close()
