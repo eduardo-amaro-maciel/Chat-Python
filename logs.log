@@ -1,0 +1,8 @@
+2022-09-06 20:03:18,157 | CLIENTE: Ola servidor
+2022-09-06 20:03:22,949 | SERVIDOR: Ola cliente
+2022-09-06 20:03:32,158 | CLIENTE: esse � um teste de mensagem
+2022-09-06 20:03:40,005 | SERVIDOR: esse tamb�m � um teste
+2022-09-06 20:03:43,573 | CLIENTE: vou sair
+2022-09-06 20:03:49,030 | SERVIDOR: tudo bem
+2022-09-06 20:03:55,405 | CLIENTE: sair
+2022-09-06 20:03:57,877 | SERVIDOR: sair
