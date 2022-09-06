@@ -1,8 +1,13 @@
 import socket
 import os
 import colorama
+import logging
+
 from colorama import Fore, Back, Style
+
 colorama.init(autoreset=True)
+
+logging.basicConfig(filename="logs.log", level=logging.INFO, format="%(asctime)s | %(message)s")
 
 servidor = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 servidor.bind(('localhost', 8080))
@@ -26,8 +31,13 @@ while not terminado:
     
     else: 
         print(Fore.CYAN + 'User: ' + msg)
+
     
-    cliente.send(input('Servidor: ').encode('utf-8'))
+    inputServer = input('User: ')
+
+    logging.info(f'SERVIDOR: {inputServer}') 
+
+    cliente.send(inputServer.encode('utf-8'))
 
 cliente.close()
 servidor.close()
